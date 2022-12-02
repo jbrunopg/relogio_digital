@@ -1,0 +1,17 @@
+from kivymd.app import MDApp
+from kivymd.uix.floatlayout import FloatLayout
+from timer import strftime
+from kivy.clock import clock
+
+class Tela(MDFloatLayout):
+    def hora(self, *args)
+        self.text = strftime("%H : %M : %S")
+        self.text_size = "60sp"
+        self.pos_hint = {"center_x:.85", center_y: .5}
+
+class Relogio(MDApp):
+    def build(self):
+        tela = Tela()
+        lock
+if __name__== "__ main __":
+    Relogio.().run()
